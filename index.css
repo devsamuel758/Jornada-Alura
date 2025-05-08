@@ -1,0 +1,518 @@
+.cabecalho__container {
+    background: var(--preto);
+    width: 100%;
+    padding: 30px 4em;
+}
+
+.cabecalho {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cabecalho__logo--icone {
+    max-width: 260px;
+}
+
+.cabecalho__logo--icone-pequeno {
+    display: none;
+}
+
+.cabecalho__menu {
+    display: none;
+}
+
+.cabecalho__navegacao {
+    display: flex;
+    gap: 40px;
+}
+
+.cabecalho__navegacao--lista {
+    display: flex;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+.cabecalho__navegacao--item {
+    display: block;
+    margin: 1em;
+}
+
+.cabecalho__navegacao--item:hover {
+    background-color: var(--cinza-escuro);
+    color: var(--preto);
+}
+
+.cabecalho__navegacao--link:hover {
+    color: var(--preto);
+    font-weight: 600;
+}
+
+.cabecalho__navegacao--item a {
+    color: var(--branco);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.banner__figure {
+    margin: 0;
+}
+
+.banner__img {
+    width: 100%;
+}
+
+.banner__img-tablet, .banner__img-mobile {
+    display: none;
+}
+
+.banner__caption {
+    max-width: 1200px;
+    color: var(--grafite, #222);
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin: 110px auto;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 3em;
+}
+
+.ofertas {
+    margin-bottom: 112px;
+}
+
+.depoimentos__titulo,
+.pagamento__titulo,
+.destinos__titulo,
+.busca__titulo,
+.ofertas__titulo {
+    color: var(--grafite);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.depoimentos__titulo--sublinhado,
+.pagamento__titulo--sublinhado,
+.destinos__titulo--sublinhado,
+.busca__titulo--sublinhado,
+.ofertas__titulo--sublinhado {
+    width: 180px;
+    height: 4px;
+    background: var(--vermelho);
+    margin: 0 auto;
+    margin-top: 16px;
+}
+
+/* Adicionando bordas arredondadas nas imagens */
+img {
+    max-width: 100%;
+    border-radius: 10px; /* Faz com que as bordas fiquem arredondadas */
+}
+
+/* Aqui estamos aplicando o border-radius especificamente nas imagens de cada seção que você mencionou */
+.cabecalho__logo--icone,
+.ofertas__cards--item img,
+.destinos__item--image,
+.pagamento__imagens--imagem,
+.depoimentos__autor--foto img,
+.footer__logo-icon {
+    border-radius: 10px; /* Borda arredondada para imagens dentro dessas classes */
+}
+
+/* Exceção para a imagem 'copy.png' no footer (se necessário) */
+.footer img[src*="copy.png"] {
+    border-radius: 0; /* Aqui não aplicamos borda arredondada */
+}
+
+/* Se preferir um efeito mais forte, pode aumentar o valor do border-radius, ex: border-radius: 20px; */
+
+
+.ofertas__cards--grupo {
+    display: flex;
+    gap: 24px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 3em;
+}
+
+.ofertas__cards--item {
+    display: flex;
+    padding: 24px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 16px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 24px 32px;
+    color: var(--branco);
+    flex: 1 0 calc(50% - 48px);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.ofertas__cards--japao {
+    background-image: url("./img/tokyo.png");
+}
+
+.ofertas__cards--san-andreas {
+    background-image: url("./img/san-andreas.png");
+}
+
+.ofertas__cards--paraiba {
+    background-image: url("./img/paraiba.png");
+}
+
+.ofertas__cards--manaus {
+    background-image: url("./img/manaus.png");
+}
+
+.ofertas__card--destino-tipo {
+    color: var(--branco, #FFF);
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+.ofertas__card--destino-nome {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.ofertas__card--preco {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 24px;
+}
+
+.destinos__item--botao,
+.ofertas__card--botao {
+    border-radius: 8px;
+    background: var(--vermelho, #B81515);
+    padding: 16px 48px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.ofertas__card--botao:hover {
+    background: var(--vermelho-escuro); 
+} 
+
+.destinos__item--botao:hover {
+    background: var(--vermelho-escuro); 
+}
+
+.destinos__item--botao,
+.ofertas__card--botao {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    color: var(--branco, #FFF);
+}
+
+.busca__categorias {
+    display: flex;
+    align-items: stretch;
+    gap: 24px;
+    padding: 0 3em;
+    margin-bottom: 112px;
+}
+
+.busca__categoria {
+    color: var(--grafite, #222);
+    text-align: center;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 8px;
+    background: var(--cinza-claro, #F5F5F5);
+    padding: 24px 16px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+span.material-symbols-outlined {
+    color: var(--cinza-escuro, #8C8C8C);
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.destinos__lista {
+    display: flex;
+    align-items: stretch;
+    gap: 24px;
+    margin-bottom: 112px;
+    padding:0 40px;
+}
+
+.destinos__item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.destinos__item--image {
+    max-width: 100%;
+}
+
+.destinos__item--nome {
+    color: var(--grafite, #222);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 24px 0;
+}
+
+.destinos__item--descricao {
+    color: var(--grafite, #222);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 24px;
+}
+
+.destinos__item--image-mobile {
+    display: none;
+}
+
+.pagamento {
+    margin:0 35px 112px;
+}
+
+.pagamento__imagens--grupo,
+.pagamento__condicoes {
+    display: flex;
+    gap: 24px;
+    padding-left: 0;
+}
+
+.pagamento__condicoes--destaque {
+    color: var(--grafite, #222);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 24px;
+}
+
+.pagamento__condicoes--detalhes {
+    color: var(--grafite, #222);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    width: 384px;
+    max-width: 100%;
+}
+
+.pagamento__imagens--imagem-container {
+    flex: 1;
+    list-style: none;
+}
+
+.pagamento__imagens--imagem-destaque {
+    margin-top: 20px;
+}
+
+.pagamento__imagens--imagem {
+    width: 100%;
+}
+
+.pagamento__imagens--imagem-mobile {
+    display: none;
+}
+
+.depoimentos {
+    margin:0 35px 112px;
+}
+
+.depoimentos__wrapper {
+    display: flex;
+    gap: 24px;
+    align-items: stretch;
+}
+
+.depoimentos__item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.depoimentos__texto {
+    color: var(--grafite, #222);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.depoimentos__autor {
+    margin-top: 12px;
+    display: flex;
+    gap: 24px;
+}
+
+.depoimentos__autor--foto {
+    max-width: 86px;
+}
+
+.depoimentos__autor--nome {
+    color: var(--grafite, #222);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.depoimentos__autor--funcao {
+    color: var(--grafite, #222);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.depoimentos__autor--foto img {
+    width: 100%;
+}
+
+.depoimentos__wrap {
+    margin-top: 64px;
+}
+
+.depoimentos__wrap--center {
+    display: flex;
+    justify-content: center;
+}
+
+.depoimentos__wrap--mobile {
+    display: none;
+}
+
+.footer__container {
+    background: var(--preto);
+    padding: 30px 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.footer__logo-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.footer__logo-icon {
+    max-width: 100px;
+}
+
+.footer__info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--branco);
+    font-size: 14px;
+}
+
+.footer__social-media-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.footer__social-media-text {
+    color: var(--branco);
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer__social-media-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.footer__social-media-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px; /* Adicionando padding para dar um espaçamento legal */
+    }
+
+    .footer__logo-container {
+        margin-bottom: 20px;
+        text-align: center; /* Centraliza o logo no celular */
+    }
+
+    .footer__info-container {
+        text-align: center; /* Centraliza o texto da informação */
+    }
+
+    .footer__social-media-container {
+        align-items: center;
+        margin-top: 20px; /* Dá uma distância legal entre as seções */
+    }
+
+    .footer__social-media-icons {
+        gap: 15px; /* Reduz o espaço entre os ícones para que fiquem mais próximos no celular */
+    }
+
+    .footer__social-media-icon {
+        width: 20px; /* Ajusta o tamanho dos ícones para não ficarem gigantes no celular */
+        height: 20px;
+    }
+
+    .footer__social-media-text {
+        font-size: 14px; /* Diminui a fonte para caber melhor na tela pequena */
+    }
+}
